@@ -1,0 +1,39 @@
+LaTeX is a free document presentation system, but it is not a word processor. LaTeX encourages authors not to worry too much about the appearance of their documents but to concentrate on getting the right content. 
+
+ 
+
+School of Finance published the layout of dissertations, say 20 pt Times Roman for the title, 12 pt Times Italic for the name, and so on. This has two results: either wasting time with designs, or a lot of badly designed documents. For this reason, the academic board of School of Finance has decided that all international students (undergraduates and postgraduates) are required to use LaTeX to generate reports, individual assignments, group assignments, and dissertations from May 25th, 2018. 
+
+ 
+
+LaTeX is based on the idea that it is better to leave document design to document designers, and to let authors get on with writing documents. So, in LaTeX you would input a document as: 
+
+ 
+
+\documentclass{article}
+
+\title{The Effect of Government Expenditure on Real Exchange Rate}
+
+\author{Jane Doe}
+
+\date{September 2018}
+
+\begin{document}
+
+   \maketitle
+
+   Hello world!
+
+\end{document}
+
+ 
+
+Installation tips: for the beginners, MiKTeX is a good choice as TeX file generation engine. Before the installation, make sure whether your operating system is 64-bit or 32-bit. The installation file of MiKTeX is downloadable from this link: https://miktex.org/download. As for the editor, there are many choices, such as TeXStudio and WinEdt (WinEdt 10.3 is very powerful, and user-friendly. Though it costs you about 200 RMB, it is a good investment. It is downloadable from this link: http://www.winedt.com/). 
+
+ 
+
+Here is a good start for you to get familiar with LaTeX, David R. Wilkins (1995) Getting Started with LaTeX. You can get a free access via the following link: free to access. https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/. 
+
+ 
+
+School of Finance adopts Harvard reference system for any academic related reports, assignments, and dissertations. Please read the reference style here (http://wwwdocs.fce.unsw.edu.au/fce/EDU/harvard_ref_guide.pdf). In LaTeX, it is done by natbib package, https://www.ctan.org/pkg/natbib
