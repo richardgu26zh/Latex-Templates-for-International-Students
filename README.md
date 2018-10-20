@@ -9,3 +9,8 @@ Wikibook for Latex is available here https://en.wikibooks.org/wiki/LaTeX
 Oct 16, 2018
 
 Candidate of 2019 June can find latest requirement and time schedule arrangement of your dissertation writing in the Information Board for Candidate 2019 June. 
+
+Oct 20, 2018
+I recorded a short tutorial for Latex installation and hope it can be helpful. 
+(weblink：https://pan.baidu.com/s/1KfwfbkwSFAVDpo-CbOu7ow 
+pin：zxjz)
