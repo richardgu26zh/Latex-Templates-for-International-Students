@@ -14,3 +14,8 @@ Oct 20, 2018
 I recorded a short tutorial for Latex installation and hope it can be helpful. 
 (weblink：https://pan.baidu.com/s/1KfwfbkwSFAVDpo-CbOu7ow 
 pin：zxjz)
+
+Nov 10, 2018
+
+I uploaded several tutorial vedios to assit you use Latex. (weblink：https://pan.baidu.com/s/10L5DQb5oz1FKZ5xf997wWQ 
+pin：sqlf).
