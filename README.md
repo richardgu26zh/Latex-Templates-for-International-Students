@@ -17,5 +17,5 @@ pin：zxjz)
 
 Nov 10, 2018
 
-I uploaded several tutorial vedios to assit you use Latex. (weblink：https://pan.baidu.com/s/10L5DQb5oz1FKZ5xf997wWQ 
+I uploaded several tutorial videos to assit you use Latex. (weblink：https://pan.baidu.com/s/10L5DQb5oz1FKZ5xf997wWQ 
 pin：sqlf).
