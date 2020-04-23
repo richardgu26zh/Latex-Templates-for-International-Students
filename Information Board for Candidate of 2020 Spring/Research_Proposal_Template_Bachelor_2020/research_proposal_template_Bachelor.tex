@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,UTF8, 12pt]{article}
+\usepackage{palatino}
+\usepackage{mathpazo}
+%\usepackage{ccmap}
+%\usepackage{times}
+\linespread{1.05}
+\usepackage[T1]{fontenc}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{indentfirst}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[colorlinks,urlcolor=blue, citecolor=blue,linkcolor=blue,hyperindex]{hyperref}
+\usepackage[left=3.17cm,right=3.17cm,top=2.54cm,bottom=3.8cm]{geometry}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage{appendix}
+\usepackage[round]{natbib}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{capt-of}
+\usepackage{fancyhdr}
+%dashed line
+%\usepackage{array}
+%\usepackage{arydshln}
+%\setlength\dashlinedash{0.2pt}
+%\setlength\dashlinegap{1.5pt}
+%\setlength\arrayrulewidth{0.3pt}
+%\usepackage{tabu}
+%\usepackage{siunitx}
+
+%\captionsetup{labelsep=newline,singlelinecheck=false}
+
+\setlength{\arrayrulewidth}{1pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Don't Change Anything Above!!!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% You can add any packages from here
+
+
+%\numberwithin{equation}{section}
+
+%\input{preamble} % input user-defined commands
+
+%\includeonly{chapter2} % if you just want to process chapter2.tex
+
+\begin{document}
+%\fangsong
+%\theoremstyle{plain}
+%\newtheorem{thm}{Theorem}[section]
+%\newtheorem{lem}[thm]{Lemma}
+%\newtheorem{prop}[thm]{Proposition}
+%\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+%\newtheorem{ax}{Axiom}[section]
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	
+	\center % Centre everything on the page
+	\includegraphics[width=0.6\textwidth]{ZJGS_logo}
+     \vskip 1cm
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	
+	\textsc{\LARGE School of Finance}\\[1.5cm] % Main heading such as the name of your university/college
+	
+	\textsc{\LARGE Bachelor Degree Research Proposal}\\[0.5cm] % Major heading such as course name
+	
+	\textsc{\large Spring Semester, 2020}\\[0.5cm] % Minor heading such as course title
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries Effect of Government Expenditure on Real Exchange Rate}\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{center}
+			\large
+			\textit{Student}\\
+			B.J. \textsc{Blazkowicz} % Your name
+		\end{center}
+	\end{minipage}
+	\vskip 2 cm
+	\begin{minipage}{0.4\textwidth}
+		\begin{center}
+			\large
+			\textit{Supervisor}\\
+			Dr. Caroline \textsc{Becker} % Supervisor's name
+		\end{center}
+	\end{minipage}
+	
+	% If you don't want a supervisor, uncomment the two lines below and comment the code above
+	%{\large\textit{Author}}\\
+	%John \textsc{Smith} % Your name
+	
+	%------------------------------------------------
+	%	Date
+	%------------------------------------------------
+	
+	\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+	
+	{\large June, 2020} % Date, change the \today to a set date if you want to be precise
+	
+	%------------------------------------------------
+	%	Logo
+	%------------------------------------------------
+	
+	%\vfill\vfill
+	%\includegraphics[width=0.2\textwidth]{placeholder.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+	
+	%----------------------------------------------------------------------------------------
+	
+	\vfill % Push the date up 1/4 of the remaining page
+	
+\end{titlepage}
+
+
+      %\tableofcontents
+%      \titleformat*{\section}{\centering\bfseries\Large}
+%      \tableofcontents
+%       \titleformat*{\section}{\bfseries\Large}
+%
+% page setting don't change in this block
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+    \urlstyle{same}
+\headheight 1.5cm % 页眉高
+\pagestyle{fancy}
+\lhead{SCHOOL OF FINANCE}
+\rhead{RESEARCH PROPOSAL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+   \section{Introduction}
+    Language is an interesting subject \citep{TM83}.
+   \section{Literature Review}
+   There are commands for in-text citations, like \citet{GMP81}. And you can pass an option to specify additional details, such as a page or chapter number, as an option \citep[p. 130]{Ful83}.
+
+   A very important reference in financial accelerator is \citet*{BGG99}.
+
+   \section{Econometrics Model}
+    The econometric model is listed as follows.
+   \begin{align}\label{econ model}
+      \text{decile}_i  = & \text{constant}_i + \beta_1\text{preAnnRet}_i +\beta_2\text{unex}_i + \beta_3\text{loss}_i \,\notag \\
+      & + \beta_4(\text{loss}_i\times\text{unex}_i) + \epsilon_i\,,
+   \end{align}
+
+
+
+
+
+\bibliographystyle{humanbio} % or try abbrvnat or unsrtnat
+\makeatletter\renewcommand{\@biblabel}[1]{[#1].}\makeatother
+\addcontentsline{toc}{section}{Reference}
+\bibliography{example} % refers to example.bib
+
+
+\newpage
+\section*{Supervisor Suggestion}
+
+
+
+\vfill
+
+
+  \begin{flushright}
+    Supervisor[signature]:~\underline{\qquad \qquad \qquad \qquad \qquad }\\
+    \vskip 1cm
+    Date:~ \underline{\qquad \qquad \qquad \qquad \qquad }
+  \end{flushright}
+
+  \vskip 2cm
+
+
+
+
+
+
+
+
+\end{document} 
