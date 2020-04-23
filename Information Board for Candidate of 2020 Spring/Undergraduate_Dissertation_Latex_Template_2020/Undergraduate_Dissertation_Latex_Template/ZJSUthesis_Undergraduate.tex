@@ -1,0 +1,274 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%              本模板可以使用以下两种方式编译:               %%%
+%%%                 PDFLaTeX       XeLaTeX                   %%%
+%%%                请使用 TeXLive 2015 编译                   %%%
+%%%                  浙江工商大学论文模板                     %%%
+%%%       Created：2016/04/15 ver 0.5 by KarryZhao@ZJSU      %%%
+%%%  Any problem or advice please mail to Karry@outlook.com  %%%
+%%%     modified by Richard Xin Gu 2018/4/15                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{ZJSUthesis}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                                          %%%
+%%%                    填写论文封面信息                       %%%
+%%%                                                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\begin{center}
+\thispagestyle{empty} %取消当前页码
+\includegraphics[height=2.72cm]{picture/ZJGU_C}
+
+\vspace{19pt}
+
+\yihao \textbf{Undergraduate Dissertation}
+
+\vspace{25pt}
+
+\includegraphics[height=4.27cm]{picture/ZJGU}
+\vspace{5mm}
+\end{center}
+\renewcommand{\ULthickness}{0.1pt}
+\ULdepth=3pt \songti\sanhao
+
+\makebox[15mm]{\textbf{Title:}} {The Effects of Government Spending on Real Exchange Rates}
+
+\vspace{10mm}
+%
+%\makebox[38mm][s]{} {\hfill{收入比和财政支出的关系分析}\hfill}
+%\vspace{1mm}
+
+\begin{center}
+
+\makebox[30mm][s]{} \makebox[30mm][s]{\textbf{School}} \uline{\hfill{School of Finance}\hfill} \makebox[30mm][s]{}
+\vspace{4mm}
+
+\makebox[30mm][s]{} \makebox[30mm][s]{\textbf{Major}} \uline{\hfill{International Finance}\hfill} \makebox[30mm][s]{}
+\vspace{4mm}
+
+%\makebox[30mm][s]{} \makebox[25mm][s]{\textbf{班级}} \uline{\hfill{时间序列分析}\hfill} \makebox[30mm][s]{}
+%\vspace{4mm}
+
+\makebox[30mm][s]{} \makebox[30mm][s]{\textbf{Student ID}} \uline{\hfill{1301060134}\hfill} \makebox[30mm][s]{}
+\vspace{4mm}
+
+\makebox[30mm][s]{} \makebox[30mm][s]{\textbf{Name}} \uline{\hfill{Saul Brown}\hfill} \makebox[30mm][s]{}
+\vspace{4mm}
+
+\makebox[30mm][s]{} \makebox[30mm][s]{\textbf{Supervisor}} \uline{\hfill{An Sangbei}\hfill} \makebox[30mm][s]{}
+\vspace{4mm}
+
+\makebox[30mm][s]{} \makebox[30mm][s]{\textbf{Submission}} \uline{\hfill{16 April, 2018}\hfill} \makebox[30mm][s]{}
+\vspace{4mm}
+
+\vspace{9mm}
+
+
+\end{center}
+\end{titlepage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                                          %%%
+%%%                  中文摘要  英文摘要                       %%%
+%%%                                                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\setlength{\baselineskip}{20pt}
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\headheight 1.5cm % 页眉高
+\pagestyle{fancy}
+\lhead{School of Finance}
+\rhead{Undergraduate Dissertation}
+
+
+
+\title{中文摘要} % Title in Chinese
+\date{}
+\maketitle
+%\cnabstract
+\xiaosihao
+本文采用OCED中34国的数据，构建了一个计量模型，检验政府支出对实际汇率的影响。$\cdots$ % input your Chinese Abstract here.
+
+
+\cnkeywords{政府支出；~ 实际汇率；~ 面板数据} % insert three- five Keywords in Chinese
+
+\newpage
+\title{Abstract} % Title in English
+\maketitle
+
+%\enabstract
+%\xiaosihao
+% input your English Abstract below
+Using panel data on military spending for 125 countries, we document new facts about the
+effects of changes in government purchases on the real exchange rate, consumption, and current
+accounts in both advanced and developing countries. While an increase in government
+purchases causes real exchange rates to appreciate and increases consumption significantly in
+developing countries, it causes real exchange rates to depreciate and decreases consumption in
+advanced countries. The current account deteriorates in both groups of countries. These findings
+are not consistent with standard international business-cycle models. We investigate whether the
+difference between advanced economies and developing countries in the responses of real
+exchange rates to spending shocks can be explained by alternative hypotheses.
+
+
+\enkeywords{\wuhao Government Expenditure; ~ Real Exchange Rate; ~ Panel Data} % insert three - five keywords in English with first letter uppercase
+\xiaosihao
+
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\renewcommand\contentsname{Table of Contents}
+
+\tableofcontents
+\renewcommand\tablename{Table}
+\renewcommand\figurename{Figure}
+\urlstyle{same}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                                          %%%
+%%%                        正文的开始                         %%%
+%%%                                                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+
+%\chead{\line(1,0){435}}
+
+%\chapter{浙江工商大学}
+\section{Introduction}
+
+How does government spending affect the current account and the real exchange rate? Conventional
+wisdom—as well as mainstream macroeconomic models used by policymakers—suggests that
+an increase in government spending puts pressure on the domestic currency to appreciate, leading
+to current account deterioration (and potentially a “twin deficit”) and to a decrease in consumption
+through an international risk-sharing condition. This mechanism holds across a wide range
+of models, including both New Keynesian and neoclassical models. However, empirical evidence
+for such a mechanism has not been settled. For example, Corsetti and Müller (2006) and Kim and
+Roubini (2008) find that in the U.S. data the trade balance improves after a government spending
+shock. In contrast, using the data for Australia, Canada, the United Kingdom, and the United States,
+Monacelli and Perotti (2010) and Ravn, Schmitt-Grohé, and Uribe (2012) estimate that a rise in
+government spending causes a trade deficit, as well as a real depreciation of the domestic currency
+and an increase in consumption. Given these contrasting empirical results in studies of a relatively
+small number of countries, several questions on the effects of government spending in an open
+economy remain: First, does government spending cause the domestic currency to appreciate in
+real terms and does it worsen the current account? Second, do the effects of government spending
+shocks differ across countries, especially between advanced and developing countries? Third, are
+there any other country characteristics, such as the exchange-rate regime or the degree of openness
+to trade, that can affect the transmission mechanism of government spending shocks?
+This paper addresses these important questions using a large data set for 125 countries between
+1989 and 2013. We provide new evidence on the effects of government spending on the real exchange
+rate, current account, and consumption. Importantly, we exploit the information in both
+advanced and developing countries to distinguish between the effects of government spending in
+these two groups. Our data also let us examine the differential effects of government spending
+depending on exchange-rate regimes and the level of trade openness. Since government spending
+can affect the state of the economy and vice versa, we identify government spending shocks using
+exogenous variation in international military spending. This approach has been used in the closed economy
+literature (Hall 2009, Barro and Redlick 2011, Ramey 2011), but remains under utilized
+in the open-economy literature.
+\subsection{Research Background}
+We document a number of new empirical facts: First, in response to a positive government
+spending shock, the real exchange rate appreciates on impact, and the effect is significant up to a
+two-year horizon. After an increase in government spending of 1 percent of GDP, the real exchange
+rate appreciates by over 3 percent on impact and by up to 5 percent two years after the shock.
+The effect is most pronounced in countries with a flexible exchange-rate regime. Consistent with
+Monacelli and Perotti (2010), we also find that the current account deteriorates significantly in
+response to a positive government spending shock. Consumption increases substantially, peaking
+at about 5 percent two years after the change in government spending.
+
+
+\section{Literature Review}
+A literature review is a text of a scholarly paper, which includes the current knowledge including substantive findings, as well as theoretical and methodological contributions to a particular topic. Literature reviews are secondary sources, and do not report new or original experimental work. Most often associated with academic-oriented literature, such reviews are found in academic journals, and are not to be confused with book reviews that may also appear in the same publication. Literature reviews are a basis for research in nearly every academic field\footnote{This part is borrowed from Wikipedia.}. A narrow-scope literature review may be included as part of a peer-reviewed journal article presenting new research, serving to situate the current study within the body of the relevant literature and to provide context for the reader. In such a case, the review usually precedes the methodology and results sections of the work.
+
+\subsection{Empirical Research}
+Producing a literature review may also be part of graduate and post-graduate student work, including in the preparation of a thesis, dissertation, or a journal article. Literature reviews are also common in a research proposal or prospectus (the document that is approved before a student formally begins a dissertation or thesis).
+
+\subsection{Theoretical Research}
+
+\section{Model Economy Setup}
+
+\subsection{Households}
+The household intends to maximize the following objective utility throughout her lifetime.
+\begin{equation}\label{household utility}
+  U_t = E_t\sum_{t=0}^{\infty}\beta^t\log C_t  - \varphi_t\frac{L_t^{1+\phi}}{\phi}\,,
+\end{equation}
+where $E_t$ is mathematical expectation operator, $C_t$ is consumption bundle. The objective utility \eqref{household utility} is subject to the following constraint.
+\begin{equation}\label{budget constraint}
+  P_tC_t \leq W_tL_t + Tr_t\,,
+\end{equation}
+
+\subsection{Producers}
+
+\section{Econometric Results}
+This is how you represent econometric results.
+
+\subsection{Result Report}
+\begin{table}[h] \caption{Performance Using Hard Decision Detection} %title of the table
+\centering     % centering table
+\begin{tabular}{c rrrrrrr}  % creating eight columns
+\hline%\hline                        %inserting double-line
+Audio Name&\multicolumn{7}{c}{Sum of Extracted Bits} \\ [0.5ex]    \hline                % inserts single-line
+Police   & 5 & -1 &  5& 5& -7& -5& 3\\  % Entering row contents
+Midnight & 7 & -3 &  5& 3& -1& -3& 5\\ News     & 9 & -3 &  7& 9& -5& -1& 9\\[1ex] % [1ex] adds vertical space
+\hline                          % inserts single-line
+\end{tabular} \label{tab:hresult} \end{table}
+
+This section examines important cases that can affect our baseline results. In particular, we analyze
+whether wars, financial crises, commodity prices, and the type of military spending can significantly
+influence our baseline results. We also show that our results are robust to adding potentially
+important controls to the regression.
+
+\section{Figure}
+
+This is how to insert picture.
+\begin{figure}[!h]
+  \begin{center}
+  \centering
+  \includegraphics[width= 6cm]{picture/ZJSU_logo}
+  \caption{Zhejiang Gongshang University Old Logo}\label{zlog}
+  \end{center}
+\end{figure}
+
+
+ Language is an interesting subject \citep{TM83}.  There are commands for in-text citations, like \citet{GMP81}. And you can pass an option to specify additional details, such as a page or chapter number, as an option \citep[p. 130]{Ful83}.
+
+   A very important reference in financial accelerator is \citep{BGG99} and \citet*{BGG99}.
+
+
+
+
+
+\newpage
+\renewcommand\refname{Reference}
+%\begin{thebibliography}{10}
+%\bibitem{1} \url{http://www.mcm.edu.cn/}
+%\bibitem{1} \url{http://bbs.chinatex.org}
+%\bibitem{2} \url{http://www.chinatex.org}
+%\bibitem{3} Alpha Huang， \textbf{latex-notes-zh-cn}, 2014.
+%\bibitem{lf}M.R.C. van Dongen,\textbf{\LaTeX-and-Friends}, 2013.
+%\bibitem{figure}Keith Reckdahl,\textbf{Using Import graphics in \LaTeXe}, 1997.
+%\bibitem{HM}Addison Wesley，\textbf{Higher Mathematics}， 下载地址如下\\ \url{http://media.cism.it/attachments/ch8.pdf}
+%\end{thebibliography}
+\bibliographystyle{humanbio} % or try abbrvnat or unsrtnat
+\makeatletter\renewcommand{\@biblabel}[1]{[#1].}\makeatother
+\addcontentsline{toc}{section}{Reference}
+\bibliography{example} % refers to example.bib
+
+%\bibliographystyle{agsm}
+%%\cleardoublepage
+%\normalbaselines %Fixes spacing of bibliography
+%\addcontentsline{toc}{chapter}{Bibliography} %adds Bibliography to your table of contents
+%\bibliography{refer}
+
+
+
+\newpage
+\appendix
+\section*{Appendix}
+
+\newpage
+\end{document}

@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Research Background}{2}{subsection.1.1}% 
+\contentsline {section}{\numberline {2}Literature Review}{3}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Empirical Research}{3}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Theoretical Research}{4}{subsection.2.2}% 
+\contentsline {section}{\numberline {3}Model Economy Setup}{4}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Households}{4}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Producers}{4}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Econometric Results}{4}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Result Report}{4}{subsection.4.1}% 
+\contentsline {section}{\numberline {5}Figure}{5}{section.5}% 
+\contentsline {section}{Reference}{6}{figure.1}% 
